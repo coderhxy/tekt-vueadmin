@@ -5,7 +5,8 @@ module.exports = {
   },
   extends: [
     'plugin:vue/essential',
-    '@vue/standard'
+    // 使用完element-ui就报错，先把eslint给关了
+    // '@vue/standard'
   ],
   parserOptions: {
     parser: 'babel-eslint'
