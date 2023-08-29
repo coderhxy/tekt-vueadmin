@@ -1,32 +1,22 @@
 <template>
   <div id="app">
-    <el-button type="primary">主要按钮</el-button>
-    <el-button type="success">成功按钮</el-button>
-    <el-button type="info">信息按钮</el-button>
-    <el-button type="warning">警告按钮</el-button>
-    <el-button type="danger">危险按钮</el-button>
+    <router-view></router-view>
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+/* 注意这里是为也后面写的页面继承这个高度，后面的页面要想高度100%，就也是用height：100% */
+body,
+html,
+#app {
+  height: 100%;
+}
+li {
+  list-style: none;
 }
 </style>
